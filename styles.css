@@ -9,13 +9,15 @@
 }
 body{
 	font-family: 'Poppins', sans-serif;
+	width: 99.2vw;
 }
 .header{
-	/* background-color: var(--pale-blue); */
+	background-color: black;
 	min-height: 1400px;
-	width: 99vw;
+	/* width: 99.9vw; */
 	position: relative;
 	overflow: hidden;
+	z-index: -6;
 }
 .header::after{
 	content: '';
@@ -191,6 +193,25 @@ body{
 	z-index: 5;
 }
 /* ----------------------------------------------------- */
+.startup-section{
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 1.2;
+	padding: 5% 2%;
+}
+.startup-section h2{
+	font-size: 6.5rem;
+	font-weight: 500;
+	margin-bottom: 4rem;
+	
+}
+.startup-section p{
+	font-size: 2.5rem;
+	color:antiquewhite;
+	line-height: 1.6;
+
+}
 
 
 
