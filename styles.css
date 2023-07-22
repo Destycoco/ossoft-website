@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* overflow: hidden; */
 }
 :root{
 	font-size: 62.5%;
@@ -10,18 +11,19 @@
 body{
 	font-family: 'Poppins', sans-serif;
 	width: 99.2vw;
+	
 }
 .header{
-	background-color: black;
-	min-height: 1400px;
-	/* width: 99.9vw; */
-	position: relative;
+	background-color: var(--pale-blue);
+	height: 1400px;
+	width: 99.9vw;
+	 /* position: relative;  */
 	overflow: hidden;
 	z-index: -6;
 }
-.header::after{
+/* .header::after{
 	content: '';
-	height: 100vh;
+	min-height: 100%;
 	width: 100vh;
 	left: 50%;
 	bottom: 0;
@@ -31,20 +33,20 @@ body{
 	transform: translateX(-50%) scale(9);
 	position: absolute;
 	z-index: -5;
-}
+} */
 
 .nav-bar{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	/* height: 15vh; */
-	border: 3px solid red;
 	padding-left: 8%;
 	padding-right: 8%;
 	margin: auto;
 }
 .img-logo img{
 	width: 25%;
+	cursor: pointer;
 }
 .img-logo h2{
 	font-size: 6rem;
@@ -61,6 +63,10 @@ body{
 	display: flex;
 	align-items: center;
 	gap: 18%;
+	position: absolute;
+	right: 45%;
+	top: 4%;
+	
 }
 .nav-bar-left .menu li,.nav-bar-left .menu a{
 	list-style-type: none;
@@ -99,6 +105,10 @@ body{
 	color:hsl(240, 100%, 65%);
 	cursor: pointer;
 }
+a{
+	color: black;
+	text-decoration: none;
+}
  .button{
 	font-size: 3rem;
 	border: 3px solid black;
@@ -114,17 +124,20 @@ body{
 	background-position: 92% 50%;
 	cursor: pointer;
 	border-radius: 6rem;
+	/* position: absolute; */
 }
 .button:hover{
 	background-color: hsl(240, 100%, 65%);
 	color: hsl(240, 100%, 98%)
+}
+.button:hover a{
+	color: white;
 }
 .header-pair{
 	display: flex;
 	width: 80%;
 	justify-content: space-between;
 	margin: auto;
-	border: 3px solid blue;
 	margin-top: 5%;
 }
 /* ----------------------------------------------------------- */
@@ -138,8 +151,9 @@ body{
 	font-weight: 600;
 }
 .header-pair .left h1{
-	font-size: 9rem;
+	font-size: 10.5rem;
 	font-weight: 600;
+	line-height: 1.2;
 }
 .header-pair .left h1:nth-of-type(3){
 	color:hsl(240, 100%, 65%);
@@ -155,7 +169,6 @@ body{
 	box-shadow: .9rem .9rem 5px rgba(0,0,0,0.8)
 }
 .header-pair .right{
-	border: 2px solid red;
 	width: 50%;
 	position: relative;
 }
@@ -191,6 +204,8 @@ body{
 	left: 8%;
 	position: absolute;
 	z-index: 5;
+	cursor: pointer;
+	
 }
 /* ----------------------------------------------------- */
 .startup-section{
@@ -210,11 +225,127 @@ body{
 	font-size: 2.5rem;
 	color:antiquewhite;
 	line-height: 1.6;
+}
+.about-section{
+	background-color: var(--pale-blue);
+	align-items: center;
+	padding: 10% 0%;
+}
+.boxes{
+	display: grid;
+	width: 75%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 65rem;
+	gap: 6%;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	
+}
+.boxes div{
+	height: 100%;
+	border-radius: 1.6rem;
+	text-align: center;
+	padding-top: 10%;
+	color: #fff;
+}
+.boxes div .fa{
+	font-size: 20rem;
+	color: #fff;
+}
+.boxes div h3{
+	margin-top: 4%;
+	font-size: 3rem;
+	font-weight: 600;
+}
+.boxes div p{
+	font-size: 2.3rem;
+	margin: 5% 0%;
+}
+.boxes div .button{
+	background-color: #fff;
+	border: none;
+	margin: auto;
+}
+.boxes div:first-child .button{
+	background: linear-gradient(to bottom,  hsl(260, 84%, 57%),#55bbe7);
+}
+.boxes div:first-child a{
+	color: #fff;
+}
+.boxes div:nth-child(2) a{
+	color: #55bbe7;
+}
+.boxes div:nth-child(3) a{
+	color: hsl(240, 100%, 65%);
+}
+.boxes div:first-child{
+	background-color: hsl(261, 79%, 18%);
+}
+.boxes div:nth-child(2){
+	background-color: #55bbe7;
+}
+.boxes div:nth-child(3){
+	background-color: hsl(240, 100%, 65%);
+	cursor: pointer;
+}
+.about-section-pair{
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	gap: 16%;
+	margin: auto;
+	margin-top: 9%;
+	height: 73rem;
+	
+}
+.about-section-pair-left{
+	position: relative;
+	width: 44%;
+	height: 100%;
+}
+.about-section-pair-left div{
+	width: 100%;
+	height: 30%;
+	background-color: #000;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+.about-section-pair-right{
+	width: 40%;
+}
+.about-section-pair-left img{
+	width: 80%;
+	height: 90%;
+	left: 10%;
+	top: 0;
+	position: absolute;
+}
+.about-section-pair-right li{
+	color:hsl(240, 100%, 60%);
+	font-size: 3rem;
+	font-weight: 500;
+	margin: 5% 0%;
+}
+.about-section-pair-right h1{
+	font-size: 5.3rem;
+	font-weight: 600;
+	line-height: 1.25;
+	margin-bottom: 2rem;
+}
+.about-section-pair-right p{
+	font-size: 2rem;
+	color: #3f403f;
+}
+.about-section-pair-right .button{
+	margin-top: 6%;
+	background-color: #000;
+}
+.about-section-pair-right a{
+	color: white;
 
 }
-
-
-
-
 
 
