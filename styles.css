@@ -718,19 +718,22 @@ footer{
 	display: flex;
 	width: 80%;
 	margin: auto;
+	
 }
 .footer-bottom1{
-	flex: 1 1 33%;
+	flex: 1 1 39%;
 }
 .footer-bottom1 div{
 	display: flex;
 	align-items: center;
 }
 .footer-bottom2{
-	flex: 1 1 33%;
+	flex: 1 1 27%;
+	padding-left:7%;
 }
 .footer-bottom3{
 	flex: 1 1 33%;
+	padding-left:10%;
 }
 .footer-bottom1 img{
 	width: 18%;
