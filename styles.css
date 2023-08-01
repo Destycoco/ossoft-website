@@ -396,11 +396,8 @@ a{
 	color: #000;
 	font-weight: 600;
 }
-.services .button:hover a{
+.services .button:hover a,.services .button:hover{
 	color: hsl(240, 100%, 98%);
-	
-}
-.services .button:hover{
 	background-color: hsl(240, 100%, 55%);
 }
 .services .boxes{
@@ -409,4 +406,220 @@ a{
 	left: 50%;
 	transform: translateX(-50%);
 	top: 40%;
+}
+.services .boxes h2{
+	font-size: 5rem;
+	font-weight: 600;
+	line-height: 1.2;
+	padding: 4% 0%;
+}
+.achievements{
+	height: 26vh;
+	background: linear-gradient(to bottom,  hsl(260, 84%, 57%),#55bbe7);
+}
+.achievements-sum{
+	width: 75%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding: 0% 1.5%;
+	flex-flow: row wrap;
+}
+.achievements-column h1{
+	font-size: 10rem;
+	color: #fff;
+	line-height: 1.3;
+}
+.achievements-column p{
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+.projects{
+	height: 400vh;
+	background-color: var(--pale-blue);
+	text-align: center;
+	padding: 4% 0%;
+	
+	
+}
+.projects h1{
+	font-size: 5.5rem;
+	color: hsl(261, 79%, 18%);
+	font-weight: 600;
+	margin-bottom: 3.7%;
+}
+.projects .button{
+	margin: auto;
+	color: #fff;
+	background:  linear-gradient(to top,  hsl(260, 84%, 57%),#55bbe7);
+	border: none;
+}
+.projects .button:hover{
+	background:  linear-gradient(to bottom,  hsl(260, 84%, 57%),#55bbe7);
+}
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	width: 75%;
+	margin: 5% auto;
+	background-color: #000;
+	height: 80rem
+}
+
+.project-image{
+	overflow: hidden;
+	white-space: nowrap;
+	margin: auto;
+	overflow: hidden;
+	height: 25%;
+	scroll-behavior: smooth;
+	height: 100%;
+
+}
+.project-image img{
+	width: calc(100%/3);
+	height: 100%;
+	margin-left: 30px;
+	object-fit: cover;
+}
+.project-image.dragging{
+	cursor: grab;
+	scroll-behavior: smooth;
+  }
+.wrapper .project-image img:first-child{
+	margin-left: 0;
+}
+.projects i{
+	font-size: 5rem;
+	cursor: pointer;
+}
+.projects i[class$="left"]{
+	margin-right: 4rem;
+}
+.projects-pair{
+	width: 50%;
+	display: flex;
+	margin: auto;
+	align-items: center;
+	height: 50vh;
+	border: 3px solid red;
+	gap: 10%;
+	margin: 5% auto;
+	margin-bottom: 10%;
+}
+.projects-pair-left{
+	border: 3px solid green;
+	width: 50%;
+	height: 100%;
+}
+.projects-pair-left h1{
+	font-size : 3.5rem;
+	padding-top:1.2rem;
+	margin-bottom: 0;
+}
+.projects-pair-left p{
+	font-size: 1.8rem;
+	
+}
+.projects-pair-images{
+	border: 3px solid purple;
+	height: 100%;
+	position: relative;
+}
+.projects-pair-images img{
+	height: 90%;
+	width: 80%;
+	z-index: 100;
+	position: absolute;
+	left: 10%;
+}
+.projects-pair-images div{
+	width: 100%;
+	position: absolute;
+	height: 50%;
+	bottom: 0;
+	background-color: #000;
+}
+.projects-pair-right{
+	width: 50%;
+}
+.projects-pair-right p{
+	font-size: 2.1rem;
+	text-align: left;
+}
+.line{
+	width: 90%;
+	margin: auto;
+	height: 0.8rem;
+	background-color: black;
+}
+.form{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: center;
+	height: 80vh;
+	/* background-color: red; */
+	align-items: center;
+	padding: 4%;
+	background: linear-gradient(
+		to right,
+		hsl(261, 80%, 53%),
+		hsl(261, 80%, 53%) 47%,
+		rgba(0,0,0,1) 47%,
+		rgba(0,0,0,1) 100%
+	);
+	margin: 5% auto;
+}
+.form-left{
+	width: 50%;
+	text-align: left;
+	height: 90%;
+}
+.form-left li{
+	font-size: 1.7rem;
+	color: #fff;
+}
+.form-left h1{
+	color: #fff;
+	font-size: 6rem;
+	line-height: 1.3;
+	margin: 6% auto;
+}
+.form-left input{
+	width: 70%;
+	height: 6rem;
+	margin-bottom: 2%;
+	font-size: 2.3rem;
+	border: none;
+	background-color: hsl(261, 80%, 53%);
+	border-bottom: 2px solid #fff;
+	color: #fff;
+
+}
+.form-left input::placeholder{
+	color: #fff;
+	font-weight: 500;
+}
+.form-left input:focus{
+	outline: none;
+	border: 2px solid #fff;
+}
+.form-right{
+	width: 50%;
+}
+.form .btn{
+	width: 26rem;
+	height: 8rem;
+	border-radius: 5rem;
+	font-size: 2.3rem;
+	color: #fff;
+	background-color: #000;
+	font-weight: 600;
+	margin-top: 5%;
+	cursor: pointer;
 }
